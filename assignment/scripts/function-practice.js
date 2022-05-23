@@ -91,9 +91,24 @@ console.log('The last item in the array is:', getLast(array))
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+
+let items =[]
+
+function find(lostItem){
+  items[x]=lostItem
+  for(let items=0;items<items.length;items++){
+    if(items[1]==='Paper'){
+      return true
+    }else{
+      return false
+    }
+  }
 }
+
+console.log(find(items))
+
+
+
 
 // ----------------------
 // Stretch Goals
