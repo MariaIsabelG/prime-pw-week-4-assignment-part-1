@@ -15,7 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
-let studentName = 'Babis';
+let studentName = 'Babis'
 function greeting(studentName){
   return `Hello, ${studentName}`
 }
@@ -92,20 +92,13 @@ console.log('The last item in the array is:', getLast(array))
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-let items =[]
 
-function find(lostItem){
-  items[x]=lostItem
-  for(let items=0;items<items.length;items++){
-    if(items[1]==='Paper'){
-      return true
-    }else{
-      return false
-    }
-  }
-}
 
-console.log(find(items))
+
+
+
+
+
 
 
 
@@ -119,7 +112,7 @@ function isFirstLetter(letter, string) {
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+console.log( 'isF irstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
