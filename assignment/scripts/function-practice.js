@@ -67,15 +67,6 @@ console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
 
-
-
-
-
-
-
-
-
-
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
@@ -92,14 +83,17 @@ console.log('The last item in the array is:', getLast(array))
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-
-
-
-
-
-
-
-
+function find(value, array){
+  for(let i=0; i<array.length; i++){
+    if(array[i]===value){
+      return true
+    }
+    else{
+      return false
+    } 
+  }
+}
+console.log('Did we find the correct value?', find(56,array));
 
 
 
