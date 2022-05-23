@@ -23,13 +23,18 @@ function greeting(studentName){
 
 // Remember to call the function to test
 
-console.log(greeting(studentName));
+console.log('Student greeting should read:', greeting(studentName));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+
+let result;
+function addNumbers(num1, num2 ) {
+  result= num1 + num2
+  return result
   // return firstNumber + secondNumber;
 }
 
+console.log('Adding 4 and 6:', addNumbers(4,6))
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
