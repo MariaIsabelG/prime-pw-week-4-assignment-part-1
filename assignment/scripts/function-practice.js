@@ -62,6 +62,9 @@ console.log('Testing isPositive function with -5:', isPositive(-5))
 console.log('Testing isPositive function with 35:', isPositive(35))
 
 // Write a separate console.log statement for each outcome
+
+
+//Not sure what to do here
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
