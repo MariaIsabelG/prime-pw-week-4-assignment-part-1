@@ -27,9 +27,8 @@ console.log('Student greeting should read:', greeting(studentName));
 
 // 3. Function to add two numbers together & return the result
 
-let result;
 function addNumbers(num1, num2 ) {
-  result= num1 + num2
+  let result= num1 + num2
   return result
   // return firstNumber + secondNumber;
 }
@@ -39,7 +38,7 @@ console.log('Adding 4 and 6:', addNumbers(4,6))
 // 4. Function to multiply three numbers & return the result
 
 function multiplyThree(number1, number2, number3 ){
-  result= number1*number2*number3
+  let result= number1*number2*number3
   return result
 }
 
@@ -75,9 +74,9 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 let array=[2,3,4,78];
 
-function getLast(lastItem) {
-  lastItem=array.length -1
-  return array[lastItem]
+function getLast(anyArray) {
+  let result = anyArray[anyArray.length-1]
+  return result
 }
 
 console.log('The last item in the array is:', getLast(array))
@@ -86,18 +85,19 @@ console.log('The last item in the array is:', getLast(array))
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-function find(value, array){
-  for(let i=0; i<array.length; i++){
-    if(array[i]===value){
-      return true
-    }
-    else{
-      return false
-    } 
-  }
-}
-console.log('Did we find the correct value?', find(56,array));
+function find(value, anyArray){
+  for(let i=0;i<anyArray.length;i++){
+    if(anyArray[i]===value){
+     return true
+    }  
+  } return false
+} 
 
+
+
+console.log("Should return false", find(56, array));
+console.log("Should return true", find(78, array));
+console.log("Should return true", find(2, array));
 
 
 // ----------------------
